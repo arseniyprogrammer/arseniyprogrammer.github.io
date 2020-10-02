@@ -1,227 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <link rel="icon" href="../../images/favicon.ico">
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/style.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style Guide</title>
-    <style>
-    /* Вся страница */
-
-* {
-    margin: 0;
-    font-family: 'IBM Plex Sans';
-}
-
-/* Навигация */
-
-nav {
-    height: 75px;
-    width: 100%;
-    border: 1px solid black;
-    backdrop-filter: blur(20px);
-    background-color: rgb(255, 255, 255, .4);
-    z-index: 10;
-    position: fixed;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-/* Страница сейчас */
-
-li#now-page {
-    opacity: .5;
-}
-
-/* Меню страницы */
-
-a#menu-pages-main {
-    font-size: 48px;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    float: left;
-    position: relative;
-    left: 150px;   
-}
-
-a#menu-pages-main:hover {
-    opacity: .8;
-}
-
-section#menu-pages {
-    float: right;
-    position: relative;
-    right: 150px;
-    bottom: 5px;
-}
-
-section#menu-pages li {
-    display: inline-block;
-    margin: 10px;
-}
-
-section#menu-pages li a {
-    color: black;
-    text-decoration: none;
-    position: relative;
-    right: 100px;
-    top: 40px;
-}
-
-section#menu-pages li a:hover {
-    opacity: .5;
-}
-
-/* Ссылки на страницы дизайна операционных систем */
-
-main {
-    position: relative;
-    top: 75px;
-}
-
-main section {
-    display: block;
-}
-
-main a {
-    height: 400px;
-    width: 500px;
-    padding: 50px;
-    background-color: #fafafa;
-    text-decoration: none;
-    display: inline-block;
-    margin: 75px;
-} 
-
-main a:hover {
-    text-decoration: underline;
-    color: #0070c9;
-}
-
-main img {
-    display: block;
-    margin: 30px auto;
-}
-
-main figcaption {
-    font-size: 20px;
-    color: #0070c9;
-    display: block;
-    margin: 60px auto;
-}
-
-main figcaption#macos-text {
-    height: 27px;
-    width: 64px;
-}
-
-main figcaption#iosipados-text {
-    height: 27px;
-    width: 120px;
-}
-
-main figcaption#watchos-text {
-    height: 27px;
-    width: 80px;
-}
-
-main figcaption#tvos-text {
-    height: 27px;
-    width: 43px;
-}
-
-
-    </style>
+    <title>North Bike Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 
 <body>
-<!-- Start of page -->
-<!-- Menu -->
     <header>
-        <nav>
+        <nav id="menu">
             <ul>
-                <li>
-                    <a id="menu-pages-main" href="./index.html">
-                        Human Interface Guidelines
-                    </a>
-                </li>
-                <section id="menu-pages">
+                <section>
                     <li>
-                        <a href="../Another/tvOS/tvos.html">
-                            tvOS
+                        <a href="#about-us">
+                            About us
                         </a>
                     </li>
                     <li>
-                        <a href="../Another/watchOS/watchos.html">
-                            watchOS
+                        <a href="#timetable">
+                            Timetable
+                        </a>
+                    </li>
+                </section>
+                <section>
+                    <li>
+                        <a href="#what-you-will-learn">
+                            What you will learn
                         </a>
                     </li>
                     <li>
-                        <a href="../Another/iOS & iPadOS/ios&ipados.html">
-                            iOS & iPadOS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../Another/macOS/macos.html">
-                            macOS
+                        <a href="#price">
+                            Price
                         </a>
                     </li>
                 </section>
             </ul>
         </nav>
     </header>
-<!-- Page -->
     <main>
-<!-- First row of images -->
-            <section>
-                <a href="../Another/macOS/macos.html">
-                    <figure>
-                        <img src="../../images/macOS-main.svg" alt="macOS" height="250px">
-                        <figcaption id="macos-text">
-                            macOS 
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="../Another/iOS & iPadOS/ios&ipados.html">
-                    <figure>
-                        <img src="../../images/iOS-main.svg" alt="iOS & iPadOS" height="250px">
-                        <figcaption id="iosipados-text">
-                            iOS & iPadOS
-                        </figcaption>
-                    </figure>
-                </a>
-            </section>
-<!-- Second row of images -->
-            <section>
-                <a href="../Another/watchOS/watchos.html">
-                    <figure>
-                        <img src="../../images/watchOS-main.svg" alt="watchOS" height="250px">
-                        <figcaption id="watchos-text">
-                            watchOS
-                        </figcaption>
-                    </figure>
-                </a>
-                <a href="../Another/tvOS/tvos.html">
-                    <figure>
-                        <img src="../../images/tvOS-main.svg" alt="tvOS" height="250px">
-                        <figcaption id="tvos-text">
-                            tvOS
-                        </figcaption>
-                    </figure>
-                </a>
-            </section>
+        <section id="main">
+            <div id="black"></div>
+            <div id="image"></div>
+            <div id="main-title">North Bike Club</div>
+            <div id="text">One of the best bikes clubs in the world.</div>
+        </section>
+        <section id="about-us"></section>
+        <section id="timetable"></section>
+        <section id="what-you-will-learn"></section>
+        <section id="price"></section>
     </main>
-<!-- Footer -->
     <footer></footer>
-<!-- End of page -->
 </body>
 
 </html>
