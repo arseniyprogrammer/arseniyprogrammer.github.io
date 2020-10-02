@@ -1,0 +1,164 @@
+@media only screen and (max-width: 330px) and (min-width: 1px) {
+    header nav#menu {
+        height: 14em !important;
+    }
+    header nav#menu ul li a {
+        font-size: 1.5em !important;
+    }
+    header nav#menu ul li {
+        margin: .6em 5em !important;
+    }
+}
+
+@media only screen and (max-width: 490px) and (min-width: 330px) {
+    header nav#menu {
+        height: 7.5em !important;
+    }
+    header nav#menu ul li a {
+        font-size: 1.5em !important;
+    }
+    header nav#menu ul li {
+        margin: .8em .8em !important;
+    }
+}
+
+@media only screen and (max-width: 715px) and (min-width: 490px) {
+    header nav#menu {
+        height: 7.5em !important;
+    }
+    header nav#menu ul li a {
+        font-size: 2em !important;
+    }
+    header nav#menu ul li {
+        margin: .3em 3em !important;
+    }
+    header nav#menu ul section {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 940px) and (min-width: 715px) {
+    header nav#menu {
+        height: 2em !important;
+    }
+    header nav#menu ul li a {
+        font-size: 1.5em !important;
+    }
+    header nav#menu ul li {
+        margin: .5em 1em !important;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 940px) {
+    header nav#menu {
+        height: 3em !important;
+    }
+    header nav#menu ul li a {
+        font-size: 2em !important;
+        margin: 0em .5em !important;
+    }
+    header nav#menu ul li {
+        margin: .7em 1em !important;
+    }
+}
+
+@media only screen and (max-width: 1505px) and (min-width: 1366px) {
+    header nav#menu {
+        height: 4em !important;
+    }
+    header nav#menu {
+        height: 1em ;
+    } 
+    header nav#menu ul li {
+        margin: 0em 1em !important;
+    }
+}
+
+* {
+    margin: 0em auto;
+    padding: 0em;
+    font-family: 'Kumbh Sans', sans-serif;
+    cursor: auto;
+    position: relative;
+}
+
+html {
+    font-size: 1em;
+}
+
+header nav#menu {
+    position: fixed;
+    width: 100%;
+    height: 2em;
+    background-color: orange;
+    z-index: 10;
+    height: 5em;
+    text-align: center;
+}
+
+header nav#menu ul section {
+    display: inline-block;
+}
+
+header nav#menu ul li {
+    display: inline-block;
+    margin: 1em 4em;
+}
+
+header nav#menu ul li :hover {
+    background-color: blue;
+    border-radius: 10em;
+    transition: 2s;
+    margin: 0em -1.1em, default;
+    padding: .1em;
+}
+
+header nav#menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+section#main div#black {
+    background-color: black;
+    height: 55em;
+    width: 100%;
+    z-index: 2;
+    opacity: .5;
+    position: fixed !important;
+}
+
+section#main div#image {
+    background-image: url(https://images.unsplash.com/photo-1484920274317-87885fcbc504?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed !important;
+    height: 55em;
+    width: 100%;
+}
+
+section#main div#main-title {
+    font-size: 10em;
+    z-index: 3;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    top: 2em;
+}
+section#main div#text {
+    position: relative;
+    color: white;
+    z-index: 3;
+    text-align: center;
+    margin: 5em 0em;
+    font-weight: 500;
+    font-size: 10em;
+}
+
+section#about-us, section#timetable, section#what-you-will-learn, section#price {
+    z-index: 4;
+    background-color: white;
+    height: 500em;
+    width: 100em;
+}
