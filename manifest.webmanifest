@@ -4,48 +4,49 @@
   "description": "Узнай ответы на любые вопросы",
   "icons": [
         {
-      "src":"/icons/ball-16.jpg",
+      "src":"/icons/ball-16.png",
       "sizes": "16x16",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src":"/icons/ball-32.jpg",
+      "src":"/icons/ball-32.png",
       "sizes": "32x32",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src":"/icons/ball-48.jpg",
+      "src":"/icons/ball-48.png",
       "sizes": "48x48",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src":"/icons/ball-72.jpg",
+      "src":"/icons/ball-72.png",
       "sizes": "72x72",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src":"/icons/ball-96.jpg",
+      "src":"/icons/ball-96.png",
       "sizes": "96x96",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src":"/icons/ball-144.jpg",
+      "src":"/icons/ball-144.png",
       "sizes": "144x144",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src":"/icons/ball-192.jpg",
+      "src":"/icons/ball-192.png",
       "sizes": "192x192",
-      "type": "image/jpg"
+      "type": "image/png"
     },
     {
-      "src":"/icons/ball-512.jpg",
+      "src":"/icons/ball-512.png",
       "sizes": "512x512",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ],
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#12356d",
+  "orientation": "any",
   "background_color": "#12356d"
 }
