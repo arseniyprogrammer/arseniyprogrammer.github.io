@@ -44,7 +44,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/app.js",
   "display": "standalone",
   "theme_color": "#12356d",
   "orientation": "any",
