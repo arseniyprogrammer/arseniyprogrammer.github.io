@@ -5,7 +5,7 @@
   "short_name": "Магический шар",
   "scope": "/",
   "display": "standalone",
-  "start_url": "./sw.js",
+  "start_url": "./index.html",
   "background_color": "#1b51a8",
   "theme_color": "#1b51a8",
   "description": "Приложение, которое ответит на любые вопросы.",

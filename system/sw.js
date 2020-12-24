@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v1';
+var CACHE_NAME = 'magic-ball';
 var urlsToCache = [
   './index.html',
   './media/icons/ball-16.png',
