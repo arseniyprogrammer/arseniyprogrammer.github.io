@@ -5,7 +5,7 @@
   "short_name": "Магический шар",
   "scope": "/",
   "display": "standalone",
-  "start_url": "https://arseniyprogrammer.github.io/",
+  "start_url": "./pwabuilder-sw.js",
   "background_color": "transparent",
   "theme_color": "transparent",
   "description": "Приложение, которое ответит на любые вопросы.",
@@ -54,17 +54,5 @@
   "type": "image/png"
 }
 ],
-  "url": "https://arseniyprogrammer.github.io",
-  "screenshots": [
-    {
-      "src": "[Embedded]",
-      "sizes": "1280x800",
-      "type": "image/png"
-    },
-    {
-      "src": "[Embedded]",
-      "sizes": "750x1334",
-      "type": "image/png"
-    }
-  ]
+  "url": "https://arseniyprogrammer.github.io"
 }
