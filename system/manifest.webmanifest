@@ -44,7 +44,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/sw.js",
+  "scope": "/",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#12356d",
   "orientation": "any",
