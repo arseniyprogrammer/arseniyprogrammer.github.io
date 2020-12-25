@@ -1,66 +1,60 @@
-var CACHE_NAME = 'magic-ball';
+var CACHE_NAME = "magic-ball";
 var urlsToCache = [
-  '../index.html',
-  '../media/icons/ball-16.png',
-  '../media/icons/ball-32.png',
-  '../media/icons/ball-48.png',
-  '../media/icons/ball-72.png',
-  '../media/icons/ball-96.png',
-  '../media/icons/ball-144.png',
-  '../media/icons/ball-192.png',
-  '../media/icons/ball-512.png',
-  '../media/images/magicBall.png',
-  '../style/style.css',
-  './app.js',
-  './manifest.webmanifest'
+  "../index.html",
+  "../media/icons/ball-16.png",
+  "../media/icons/ball-32.png",
+  "../media/icons/ball-48.png",
+  "../media/icons/ball-72.png",
+  "../media/icons/ball-96.png",
+  "../media/icons/ball-144.png",
+  "../media/icons/ball-192.png",
+  "../media/icons/ball-512.png",
+  "../media/images/magicBall.png",
+  "../style/style.css",
+  "./app.js",
+  "./manifest.webmanifest",
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener("install", function (event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_NAME).then(function (cache) {
+      console.log("Opened cache");
+      return cache.addAll(urlsToCache);
+    })
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener("fetch", function (event) {
   event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        if (response) {
+    caches.match(event.request).then(function (response) {
+      if (response) {
+        return response;
+      }
+
+      return fetch(event.request).then(function (response) {
+        if (!response || response.status !== 200 || response.type !== "basic") {
           return response;
         }
 
-        return fetch(event.request).then(
-          function(response) {
-            if(!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
-            }
+        var responseToCache = response.clone();
 
-            var responseToCache = response.clone();
+        caches.open(CACHE_NAME).then(function (cache) {
+          cache.put(event.request, responseToCache);
+        });
 
-            caches.open(CACHE_NAME)
-              .then(function(cache) {
-                cache.put(event.request, responseToCache);
-              });
-
-            return response;
-          }
-        );
-      })
-    );
+        return response;
+      });
+    })
+  );
 });
 
-self.addEventListener('activate', function(event) {
-
-  var cacheAllowlist = ['pages-cache-v1', 'blog-posts-cache-v1'];
+self.addEventListener("activate", function (event) {
+  var cacheAllowlist = ["magic-ball"];
 
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(function (cacheNames) {
       return Promise.all(
-        cacheNames.map(function(cacheName) {
+        cacheNames.map(function (cacheName) {
           if (cacheAllowlist.indexOf(cacheName) === -1) {
             return caches.delete(cacheName);
           }
