@@ -12,8 +12,7 @@ var urlsToCache = [
   '../media/images/magicBall.png',
   '../style/style.css',
   './app.js',
-  './manifest.webmanifest',
-  './sw.js'
+  './manifest.webmanifest'
 ];
 
 self.addEventListener('install', function(event) {
