@@ -3,7 +3,7 @@
   "lang": "Russian",
   "name": "Магический шар",
   "short_name": "Магический шар",
-  "scope": "https://www.arseniyprogrammer.github.io",
+  "scope": "../",
   "display": "standalone",
   "start_url": "./app.js",
   "background_color": "#1b51a8",
