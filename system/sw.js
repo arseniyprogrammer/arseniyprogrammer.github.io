@@ -1,19 +1,19 @@
 var CACHE_NAME = 'magic-ball';
 var urlsToCache = [
-  './index.html',
-  './media/icons/ball-16.png',
-  './media/icons/ball-32.png',
-  './media/icons/ball-48.png',
-  './media/icons/ball-72.png',
-  './media/icons/ball-96.png',
-  './media/icons/ball-144.png',
-  './media/icons/ball-192.png',
-  './media/icons/ball-512.png',
-  './media/images/magicBall.png',
-  './style/style.css',
-  './system/app.js',
-  './manifest/webmanifest',
-  './system/sw.js'
+  '../index.html',
+  '../media/icons/ball-16.png',
+  '../media/icons/ball-32.png',
+  '../media/icons/ball-48.png',
+  '../media/icons/ball-72.png',
+  '../media/icons/ball-96.png',
+  '../media/icons/ball-144.png',
+  '../media/icons/ball-192.png',
+  '../media/icons/ball-512.png',
+  '../media/images/magicBall.png',
+  '../style/style.css',
+  './app.js',
+  './manifest.webmanifest',
+  './sw.js'
 ];
 
 self.addEventListener('install', function(event) {
