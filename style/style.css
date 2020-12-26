@@ -28,13 +28,6 @@ div.ball {
   border-radius: 100%;
 }
 
-@media only screen and (max-width: 650px) and (min-width: 0px) {
-  div.ball {
-    width: 20rem !important;
-    height: 20rem !important;
-  }
-}
-
 @-webkit-keyframes swing {
   15% {
     -webkit-transform: translateX(9px);
