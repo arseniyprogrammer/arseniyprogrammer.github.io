@@ -13,32 +13,12 @@ div#background {
   height: 100%;
 }
 
-div#text {
-  width: 40rem;
-  height: 40rem;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  overflow: hidden;
-  margin: auto;
-  padding-top: 37.5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 100%;
-  text-align: center;
-  color: white;
-  z-index: 10;
-}
-
 div.ball {
   background-image: url(../media/images/magicBall.png);
   width: 40rem;
   height: 40rem;
   background-repeat: no-repeat;
   background-size: 100%;
-  overflow: hidden;
   margin: auto;
   position: absolute;
   top: 0;
@@ -146,4 +126,22 @@ svg#triangle polygon {
   fill: #1b51a8;
   stroke: #1b51a8;
   stroke-width: 1;
+}
+
+div#text {
+  width: 40rem;
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  padding-top: 37.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  z-index: 10;
 }
