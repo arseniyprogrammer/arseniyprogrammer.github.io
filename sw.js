@@ -9,7 +9,7 @@ var urlsToCache = [
   "./media/icons/ball-144.png",
   "./media/icons/ball-192.png",
   "./media/icons/ball-512.png",
-  "./media/images/magicBall.png",
+  "./media/images/magicBall.webp",
   "./style/style.css",
   "./system/app.js",
   "./system/manifest.webmanifest",
