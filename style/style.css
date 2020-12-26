@@ -8,6 +8,10 @@
   font-family: "JetBrains Mono", monospace;
 }
 
+html {
+  overflow: hidden !important;
+}
+
 div#background {
   background: radial-gradient(circle, #12356d, #000);
   height: 100%;
