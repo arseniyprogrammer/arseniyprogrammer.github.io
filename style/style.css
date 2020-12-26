@@ -11,9 +11,11 @@
 div#background {
   background: radial-gradient(circle, #12356d, #000);
   height: 100%;
+  overflow: hidden;
 }
 
 div.ball {
+  overflow: hidden;
   background-image: url("../media/images/magicBall.webp");
   width: 40rem;
   height: 40rem;
