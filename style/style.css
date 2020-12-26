@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap");
 
+@media only screen and (max-width: 40em) {
+  div.ball {
+    transform: scale(0.7);
+  }
+}
+
 * {
   margin: 0px auto;
   padding: 0px;
