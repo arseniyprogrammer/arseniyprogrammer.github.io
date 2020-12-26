@@ -14,7 +14,7 @@ div#background {
 }
 
 div.ball {
-  background-image: url(../media/images/magicBall.png);
+  background-image: url("../media/images/magicBall.webp");
   width: 40rem;
   height: 40rem;
   background-repeat: no-repeat;
