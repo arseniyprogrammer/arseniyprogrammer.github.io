@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap");
 
 @media only screen and (max-width: 40em) {
-  div.ball {
-    transform: scale(0.7);
+  div.ball, div#text {
+    zoom: 0.5;
   }
 }
 
@@ -110,7 +110,6 @@ div#inside {
   width: 50%;
   border-radius: 100%;
   margin: auto;
-  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -120,7 +119,6 @@ div#inside {
 
 svg#tirtangle {
   margin: auto;
-  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
